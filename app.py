@@ -10,8 +10,7 @@ import json
 import warnings
 import requests # <-- ADDED THIS IMPORT
 
-# Commented out chatbot as we don't have the file
-# from chatbot_module import chatbot_interface 
+from chatbot_module import chatbot_interface 
 warnings.filterwarnings("ignore")
 
 # --- THIS FUNCTION IS NOW FIXED ---
@@ -152,8 +151,8 @@ def main():
                 st.session_state.results = file_name
     
     elif mode == "🤖 Chatbot":
-        st.info("Chatbot interface is not enabled in this snippet.")
-        # chatbot_interface()
+        #st.info("Chatbot interface is not enabled in this snippet.")
+        chatbot_interface()
 
 
 if __name__ == "__main__":
