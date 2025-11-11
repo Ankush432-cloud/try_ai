@@ -1,9 +1,4 @@
 import os
-# Force transformers to avoid TensorFlow
-os.environ["TRANSFORMERS_NO_TF"] = "1"
-os.environ["USE_TF"] = "0"
-# now safe to import the rest
-
 import streamlit as st
 import requests
 import json
